@@ -52,7 +52,7 @@ Continue following the [instructions from the official page](https://vercel.com/
 vercel
 ```
 
-### 7. [Enable SSR](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
+### 7. [Enable SSR](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/ae2bcbab16ceebde83e909165a4d5edb842af277)
 
 Modify `nuxt.config.ts` to enable SSR:
 
@@ -63,12 +63,14 @@ export default defineNuxtConfig({
 });
 ```
 
-### 905. [First SSR Request](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/421f00dac2c7eafcc5faf43a67e88f9d9c123419)
+### 8. [First SSR Request](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
 
 Create the file `server/api/hello.ts`:
 
 ```typescript
 export default defineEventHandler((event) => {
+  console.log("Hello, world!");
+
   return {
     hello: "world",
   };
