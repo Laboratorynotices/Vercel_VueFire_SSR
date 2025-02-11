@@ -18,17 +18,41 @@ Ensure you have the latest versions of npm and nuxi installed:
 sudo npm install -g npm@latest nuxi@latest
 ```
 
-### 2. [Initialize the Nuxt 3 Project](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/)
+### 2. [Initialize the Nuxt 3 Project](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/59c8496c65b26fad920c81c68ede7db1ace34001)
 
 ```bash
 npx nuxi init . --package-manager npm --force --no-telemetry --no-git-init
 ```
 
-### 903. Deploy the Project to Vercel
+### 3. Installing Vercel CLI
 
-Follow the official Vercel guide: [Getting Started with Vercel](https://vercel.com/docs/get-started).
+To download and [install Vercel CLI](https://vercel.com/docs/cli#installing-vercel-cli), run the following command:
 
-### 904. [Enable SSR](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/bff592c73e5c1bf9ab2f6ad4e048c7bf4ee46684)
+```bash
+sudo npm i -g vercel
+```
+
+### 4. Sign up on [Vercel Page](https://vercel.com/login)
+
+Sign up on [Vercel](https://vercel.com/login) using your GitHub account. SMS verification is required.
+
+### 5. Authentication via Vercel CLI
+
+Follow the [instructions on the official page](https://vercel.com/docs/cli/login#github) and authenticate in Vercel CLI using your GitHub account:
+
+```bash
+vercel login --github
+```
+
+### 6. Project Initialization and First Deployment to Vercel
+
+Continue following the [instructions from the official page](https://vercel.com/docs/cli/deploy) and run the following command in the project's root directory:
+
+```bash
+vercel
+```
+
+### 7. [Enable SSR](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
 
 Modify `nuxt.config.ts` to enable SSR:
 
