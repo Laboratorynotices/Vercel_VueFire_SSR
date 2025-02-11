@@ -139,7 +139,7 @@ GOOGLE_FIREBASE_CONFIG_APP_ID="..."
 GOOGLE_APPLICATION_CREDENTIALS=/service-account.json
 ```
 
-### 12. Adding VueFire in nuxt.config.ts
+### 12. [Adding VueFire in nuxt.config.ts](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/e95775f806c01734c3d38bc6848cd6e5e43aa3c0)
 
 Update `nuxt.config.ts`:
 
@@ -150,9 +150,37 @@ export default defineNuxtConfig({
 });
 ```
 
-### 911. Test VueFire
+### 13. Testing VueFire
 
-### 907. [Determine the Absolute Path to `service-account.json`](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/e206a0229f609005e364ffa2ece304cdafaaed10)
+Add the following code to the nuxt.config.ts file:
+
+```typescript
+export default defineNuxtConfig({
+  vuefire: {
+    auth: {
+      enabled: true,
+      sessionCookie: true,
+    },
+  },
+});
+```
+
+Next, update the app.vue file with the following:
+
+```typescript
+<script setup lang="ts">
+import { useCurrentUser } from "vuefire";
+const user = useCurrentUser();
+</script>
+
+<template>
+  <pre>{{ user }}</pre>
+</template>
+```
+
+No errors appear, which suggests that the test was successful.
+
+### 907. [Determine the Absolute Path to `service-account.json`](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
 
 VueFire in SSR mode requires the absolute path to `service-account.json`. Modify `hello.ts` to retrieve it:
 
@@ -180,4 +208,4 @@ git push --force
 
 ## Result
 
-??? We will see...
+It works.

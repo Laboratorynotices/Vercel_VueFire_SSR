@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   modules: ["nuxt-vuefire"],
   ssr: true,
   vuefire: {
+    // Будем пользовать авторизацией
+    auth: {
+      enabled: true,
+      // Для SSR будем хранить сессию в куках
+      sessionCookie: true,
+    },
     config: {
       apiKey: process.env.GOOGLE_FIREBASE_CONFIG_API_KEY,
       authDomain: process.env.GOOGLE_FIREBASE_CONFIG_AUTH_DOMAIN,
