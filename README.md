@@ -18,7 +18,7 @@ Ensure you have the latest versions of npm and nuxi installed:
 sudo npm install -g npm@latest nuxi@latest
 ```
 
-### 902. [Initialize the Nuxt 3 Project](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/f7b7472e5fce4fcfad22c4e1642aa0a157b7d09e)
+### 2. [Initialize the Nuxt 3 Project](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/)
 
 ```bash
 npx nuxi init . --package-manager npm --force --no-telemetry --no-git-init
