@@ -95,7 +95,7 @@ In `app.vue`, add the following code to fetch and display the data:
 - Rename the downloaded file to `service-account.json` and place it in the project root.
 - Add `service-account.json` to `.gitignore` to prevent accidental commits.
 
-### 10. [Install VueFire](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
+### 10. [Install VueFire](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/14b16e3116d8a7ad1890a13d8b7dc1d051ff707b)
 
 Install necessary dependencies:
 
@@ -111,7 +111,7 @@ npx nuxi@latest module add vuefire
 npm install firebase-admin firebase-functions @firebase/app-types
 ```
 
-### 910. Configure VueFire
+### 11. Configure VueFire
 
 Update `nuxt.config.ts`:
 
