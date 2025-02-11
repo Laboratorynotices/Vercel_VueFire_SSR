@@ -63,7 +63,7 @@ export default defineNuxtConfig({
 });
 ```
 
-### 8. [First SSR Request](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
+### 8. [First SSR Request](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/d358f20c5ea99a49739b6a9e50c744e418149b14)
 
 Create the file `server/api/hello.ts`:
 
@@ -89,7 +89,7 @@ In `app.vue`, add the following code to fetch and display the data:
 </template>
 ```
 
-### 906. [Firebase Admin SDK Setup](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/1218d59a5aa9573a6c07b4c7cbe6047cbed461cf)
+### 9. [Firebase Admin SDK Setup](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/)
 
 - Download the secret key from [Firebase Console](https://console.firebase.google.com/).
 - Rename the downloaded file to `service-account.json` and place it in the project root.
