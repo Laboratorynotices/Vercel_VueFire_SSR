@@ -111,7 +111,7 @@ npx nuxi@latest module add vuefire
 npm install firebase-admin firebase-functions @firebase/app-types
 ```
 
-### 11. Configure VueFire
+### 11. [Configure VueFire](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/3865af01f1a0f449a50c651a068fd203cae4446d)
 
 Update `nuxt.config.ts`:
 
@@ -137,6 +137,17 @@ GOOGLE_FIREBASE_CONFIG_AUTH_DOMAIN="....firebaseapp.com"
 GOOGLE_FIREBASE_CONFIG_PROJECT_ID="..."
 GOOGLE_FIREBASE_CONFIG_APP_ID="..."
 GOOGLE_APPLICATION_CREDENTIALS=/service-account.json
+```
+
+### 12. Adding VueFire in nuxt.config.ts
+
+Update `nuxt.config.ts`:
+
+```typescript
+export default defineNuxtConfig({
+  modules: ["nuxt-vuefire"],
+  // Other configuration options...
+});
 ```
 
 ### 911. Test VueFire
