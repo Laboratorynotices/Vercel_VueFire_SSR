@@ -89,39 +89,13 @@ In `app.vue`, add the following code to fetch and display the data:
 </template>
 ```
 
-### 9. [Firebase Admin SDK Setup](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/)
+### 9. [Firebase Admin SDK Setup](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/283c1ddae05bd85f41a70303e6bf20438502ec5b)
 
 - Download the secret key from [Firebase Console](https://console.firebase.google.com/).
 - Rename the downloaded file to `service-account.json` and place it in the project root.
 - Add `service-account.json` to `.gitignore` to prevent accidental commits.
 
-### 907. [Determine the Absolute Path to `service-account.json`](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/e206a0229f609005e364ffa2ece304cdafaaed10)
-
-VueFire in SSR mode requires the absolute path to `service-account.json`. Modify `hello.ts` to retrieve it:
-
-```typescript
-import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
-
-export default defineEventHandler((event) => {
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = dirname(__filename);
-  return { path: resolve(__dirname, "../../service-account.json") };
-});
-```
-
-**Result:** `"/service-account.json"`.
-
-### 908. Revert `hello.ts` to its Previous Version
-
-Run the following commands:
-
-```bash
-git reset --hard 1218d59a5aa9573a6c07b4c7cbe6047cbed461cf^C
-git push --force
-```
-
-### 909. [Install VueFire](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/b5889f5ba15feda9aab6a290bf20a745bdb7c179)
+### 10. [Install VueFire](https://github.com/Laboratorynotices/Vercel_VueFire_SSR)
 
 Install necessary dependencies:
 
@@ -166,6 +140,32 @@ GOOGLE_APPLICATION_CREDENTIALS=/service-account.json
 ```
 
 ### 911. Test VueFire
+
+### 907. [Determine the Absolute Path to `service-account.json`](https://github.com/Laboratorynotices/Vercel_VueFire_SSR/tree/e206a0229f609005e364ffa2ece304cdafaaed10)
+
+VueFire in SSR mode requires the absolute path to `service-account.json`. Modify `hello.ts` to retrieve it:
+
+```typescript
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
+
+export default defineEventHandler((event) => {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = dirname(__filename);
+  return { path: resolve(__dirname, "../../service-account.json") };
+});
+```
+
+**Result:** `"/service-account.json"`.
+
+### 908. Revert `hello.ts` to its Previous Version
+
+Run the following commands:
+
+```bash
+git reset --hard 1218d59a5aa9573a6c07b4c7cbe6047cbed461cf^C
+git push --force
+```
 
 ## Result
 
